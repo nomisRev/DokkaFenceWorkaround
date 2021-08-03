@@ -8,7 +8,7 @@ plugins {
     signing
 }
 
-group = "org.example"
+group = "com.github.nomisRev"
 version = "1.0-SNAPSHOT"
 
 repositories {
