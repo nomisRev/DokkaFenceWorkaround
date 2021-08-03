@@ -1,4 +1,4 @@
-package template
+package com.github.nomisRev
 
 import junit.framework.Assert.assertNotNull
 import org.jetbrains.dokka.base.testApi.testRunner.BaseAbstractTest
@@ -19,6 +19,15 @@ class MyAwesomePluginTest : BaseAbstractTest() {
             """
             |/src/main/kotlin/sample/Test.kt
             |package sample
+            |
+            |/**
+            |  *```kotlin
+            |  * fun main(): Unit {
+            |  *   require(i > 5)
+            |  *   println("Hello World!")
+            |  * }
+            |  *```
+            |  */
             |data class TestingIsEasy(val reason: String)
             """.trimIndent(), configuration
         ) {

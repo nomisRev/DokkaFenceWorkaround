@@ -13,7 +13,6 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 val dokkaVersion: String by project
@@ -56,9 +55,9 @@ publishing {
             artifact(javadocJar.get())
 
             pom {
-                name.set("Dokka template plugin")
-                description.set("This is a plugin template for Dokka")
-                url.set("https://github.com/Kotlin/dokka-plugin-template/")
+                name.set("Dokka Fence WorkAround Plugin")
+                description.set("This is a plugin to work around the code fence bug in Dokka")
+                url.set("https://github.com/nomisRev/DokkaFenceWorkaround")
 
                 licenses {
                     license {
@@ -70,16 +69,16 @@ publishing {
 
                 developers {
                     developer {
-                        id.set("JetBrains")
-                        name.set("JetBrains Team")
-                        organization.set("JetBrains")
-                        organizationUrl.set("http://www.jetbrains.com")
+                        id.set("nomisRev")
+                        name.set("Simon Vergauwen")
+                        organization.set("Simon Vergauwen")
+                        organizationUrl.set("http://www.github.com/nomisRev")
                     }
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/Kotlin/dokka-plugin-template.git")
-                    url.set("https://github.com/Kotlin/dokka-plugin-template/tree/master")
+                    connection.set("scm:git:git://github.com/nomisRev/DokkaFenceWorkaround.git")
+                    url.set("https://github.com/nomisRev/DokkaFenceWorkaround/tree/master")
                 }
             }
         }
